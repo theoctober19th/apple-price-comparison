@@ -1,4 +1,5 @@
 import argparse
+from datetime import datetime
 from stores import (
     AppleStore,
     NewYorkStore,
@@ -74,7 +75,8 @@ def display_prices(currency: str):
         buffer += "|\n"
         buffer += "-" * row_width
         buffer += "|\n"
-    buffer += "\n★ indicates the lowest price for the product. All prices are inclusive of taxes.\n"
+    today = datetime.now().strftime("%Y-%m-%d")
+    buffer += f"\n★ indicates the lowest price for the product. All prices are inclusive of taxes. Exchange rates applied for date {today}.\n"
     print(buffer)
 
 def main():
