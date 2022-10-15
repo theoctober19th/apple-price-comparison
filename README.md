@@ -31,3 +31,7 @@ Contributors are heartily welcome. The following things are still to be done:
 1. Automatic scraping of the product prices from the Apple website
 2. Add options to list only certain products.
 3. Add options to list only certain countries / places.
+
+
+### Screenshots
+![Screenshot](screenshots/screenshot_1.png "Screenshot")
