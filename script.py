@@ -2,6 +2,8 @@ import argparse
 from datetime import datetime
 from stores import (
     AppleStore,
+    NepalStore,
+    MalaysiaStore,
     NewYorkStore,
     DubaiStore,
     AustraliaStore,
@@ -11,9 +13,11 @@ from stores import (
     HongKongStore,
     ThailandStore,
     SingaporeStore,
+    JapanStore,
 )
 
 STORES = [
+    NepalStore(),
     NewYorkStore(),
     DubaiStore(),
     AustraliaStore(),
@@ -23,6 +27,8 @@ STORES = [
     HongKongStore(),
     ThailandStore(),
     SingaporeStore(),
+    JapanStore(),
+    MalaysiaStore(),
 ]
 
 PRODUCTS = [

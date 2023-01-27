@@ -153,3 +153,44 @@ class SingaporeStore(AppleStore):
 
     def __init__(self):
         super().__init__(name=self.name, tax_rate=self.tax_rate)
+        
+class JapanStore(AppleStore):
+    tax_rate = 0
+    name = "Japan"
+    currency = "JPY"
+    items = {
+        AppleStore.IPHONE_14_PRO_256: 164800,
+        AppleStore.IPHONE_14_PRO_MAX_256: 179800,
+        AppleStore.AIRPODS_PRO_2ND_GEN: 39800,
+    }
+
+    def __init__(self):
+        super().__init__(name=self.name, tax_rate=self.tax_rate)
+
+
+class MalaysiaStore(AppleStore):
+    tax_rate = 0
+    name = "Malaysia"
+    currency = "MYR"
+    items = {
+        AppleStore.IPHONE_14_PRO_256: 5799,
+        AppleStore.IPHONE_14_PRO_MAX_256: 6299,
+        AppleStore.AIRPODS_PRO_2ND_GEN: 1099,
+    }
+
+    def __init__(self):
+        super().__init__(name=self.name, tax_rate=self.tax_rate)
+
+
+class NepalStore(AppleStore):
+    tax_rate = 0
+    name = "Nepal"
+    currency = "NPR"
+    items = {
+        AppleStore.IPHONE_14_PRO_256: 215_000,
+        AppleStore.IPHONE_14_PRO_MAX_256: 235_000,
+        AppleStore.AIRPODS_PRO_2ND_GEN: 44_500,
+    }
+
+    def __init__(self):
+        super().__init__(name=self.name, tax_rate=self.tax_rate)
